@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails GWI: development" uuid="048a0f74-ae77-4e6f-8a0c-66c47bfc1eb6">
+      <first-sync>true</first-sync>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+    </data-source>
+    <data-source name="Rails GWI: test" uuid="4bbff202-1539-4ddc-a215-4b2d6c06972c">
+      <first-sync>true</first-sync>
+      <user-name>postgres</user-name>
+      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
+    </data-source>
+    <data-source name="Rails GWI: production" uuid="ec195711-51ca-4f95-89c0-c474bc359dca">
+      <first-sync>true</first-sync>
+      <user-name>postgres</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfeddffddfe3dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>
