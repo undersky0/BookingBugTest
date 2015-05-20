@@ -9,14 +9,14 @@ default: &default
 
 development:
   <<: *default
-  database: GWI_development
+  database: G_development
 
 test:
   <<: *default
-  database: GWI_test
+  database: G_test
 
 production:
   <<: *default
-  database: GWI_production
+  database: G_production
   username: postgres
   password: <%= ENV['GWI_DATABASE_PASSWORD'] %>

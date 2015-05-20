@@ -5,21 +5,21 @@
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/GWI_development</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/G_development</jdbc-url>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails GWI: test" uuid="4bbff202-1539-4ddc-a215-4b2d6c06972c">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/GWI_test</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/G_test</jdbc-url>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails GWI: production" uuid="ec195711-51ca-4f95-89c0-c474bc359dca">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/GWI_production</jdbc-url>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/G_production</jdbc-url>
       <libraries />
     </data-source>
   </component>

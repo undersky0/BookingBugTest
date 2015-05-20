@@ -2,15 +2,20 @@
 
 Ruby 2.2.0 Rails 4.2.1
 
-Questions 4 isn't finished, because I wasn't able to connect to the API neither with curl, noir website GUI. Kept getting
+- Questions 4 isn't finished, because I wasn't able to connect to the API neither with curl, noir website GUI. Kept getting
 the Request Code 400,401 or 404. Even tried creating a new account and created a post on the forum. I'll try again in the
 morning, really want to finish it.
 
-The answers to questions 1,2,3 can be found in models/blog_api.rb and assets/javascript/blog_api.js including specs.
+- The answers to questions 1,2,3 can be found in models/blog_api.rb and assets/javascript/blog_api.js including specs.
 
-For question 5 I used db/structure.sql for creating tables and inserting data. Wasn't sure how I was expected to create
+- For question 5 I used db/structure.sql for creating tables and inserting data. Wasn't sure how I was expected to create
 them, but I remember you mentioning during the interview that there is still a lot of legacy code. Thats why it seemed
 like a good idea to write SQL like that. rake db:setup stills works.
+
+Thank you for consideration
+
+
+
 
 For questions 1 to 4 provide answers in Javascript and Ruby code
 
