@@ -16,7 +16,7 @@ Thank you for consideration
 
 
 
-
+'''
 For questions 1 to 4 provide answers in Javascript and Ruby code
 
 1. Define a function that deletes all elements of the array a = [4,7,8,'x'] that are not numbers between 6 and 9.

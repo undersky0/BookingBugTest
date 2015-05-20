@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe BugApi, type: :model do
+
   describe "functions 1-3" do
     it "random booleans in 5x5 array" do
       expect(BugApi.random_boolean.length).to eq(5)
@@ -19,4 +20,5 @@ RSpec.describe BugApi, type: :model do
       expect(BugApi.permutator([1,2])).to eq(2)
     end
   end
+
 end
