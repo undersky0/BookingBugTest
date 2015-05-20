@@ -1,18 +1,18 @@
 $(document).ready(function() {
-    a = [4,7,8,'x'];
+
     b = [4,7,8,'x'];
     function delete_numbers(arr) {
         var i = arr.length;
         var newArray = [];
         while(i--) {
-                if (arr[i] > 5 && (arr[i] < 10) && (isNaN(arr[i]) == false)) {
-                    console.log(arr[i]);
+                if ((arr[i] > 5) && (arr[i] < 10) && (isNaN(arr[i]) == false)) {
                 }else{
                     newArray.push(arr[i])
                 };
         };
         return newArray.reverse();
     }
+    console.log("delete numbers: " + delete_numbers(b));
 
     function permutator(arr) {
         var permutations = [];
@@ -29,6 +29,9 @@ $(document).ready(function() {
         }
         return permutations;
     }
+    a = [4,7,8,'x'];
+    console.log("permutator: " + permutator(a));
+
     function random() {
         var options = ['Yes','No', 'Maybe'];
         var randomNumber = Math.floor(Math.random()*options.length);
@@ -54,7 +57,7 @@ $(document).ready(function() {
 
         return array;
     }
-    console.log("permutator: " + permutator(a));
-    console.log("delete numbers: " + delete_numbers(b));
+
+
     console.log("create 5x5 array with options: " + createArray());
 });

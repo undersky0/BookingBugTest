@@ -9,7 +9,7 @@ RSpec.feature "BugApis", type: :feature do
     end
   end
 
-  describe "javascript messages" do
+  describe "javascript 1messages" do
     it 'prints console messages', :js => true do
       visit(bug_api_index_path)
       puts page.driver.console_messages

@@ -5,15 +5,17 @@ class BugApi < ActiveRecord::Base
   USER = ENV['my_email']
   PASSWORD = ENV['my_password']
   headers "App-Id" => ENV['booking_bug_id'], "App-Key" => ENV['booking_bug_key']
-  # curl -v -H "App-Id:id" -H "App-Key:key" -X POST "https://www.bookingbug.com/api/v1/login" -d 'email=bbmail&password=bbpassword'
-  def self.get_token
-    response = HTTParty.post("#{base_uri}/login",
+
+  def self.get_token(company_id, page=1, per_page=300)
+    response = HTTParty.get("https://www.bookingbug.com/api/v1/#{company_id}/services",
                        :headers => headers,
-                       :body => {
-                           :email => USER,
-                           :password => PASSWORD
-                  }, :debug_output => $stdout
-    )
+                        :query => {:page => page, :per_page => per_page},
+                             :debug_output => $stdout
+    ).parsed_response
+    r = response['_embedded']['services']
+    names = Array.new
+    r.each {|k,v| names << k['name']}
+    return names.last(2)
   end
 
   def self.delete_numbers(a=[4,7,8,'x'])
