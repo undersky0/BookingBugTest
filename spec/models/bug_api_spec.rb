@@ -12,6 +12,10 @@ RSpec.describe BugApi, type: :model do
       expect(BugApi.delete_numbers).to match_array([4,'x'])
     end
 
+    it "deletes numbers empty string" do
+      expect(BugApi.delete_numbers("")).to be_nil#
+    end
+
     it "delete numbers returns nil for string" do
       expect(BugApi.delete_numbers("string")).to be_nil
     end
